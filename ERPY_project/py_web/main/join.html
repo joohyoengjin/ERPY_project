@@ -1,0 +1,37 @@
+<!-- 사원 등록 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Membership Registration</title>
+</head>
+<body>
+    <div class="info">
+    <h2>가 입</h2>
+    <hr width="300px">
+    <form  method="POST" action="/signup">
+        <label for="name">이 름:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="employee_number">사 번:</label>
+        <input type="text" id="employee_number" name="employee_number" required><br><br>
+
+        <label for="position">직 급:</label>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="department">직 위:</label>
+        <input type="text" id="department" name="department" required><br><br>
+
+        <label for="contact_address">부 서:</label>
+        <input type="text" id="contact_address" name="contact_address" required><br><br>
+
+        <label for="contact">연락처:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+
+        <input type="submit" value="등 록">
+        
+       </div>
+    </form>
+</body>
+</html>

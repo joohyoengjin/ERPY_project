@@ -1,0 +1,29 @@
+<!-- 프로젝트 목록 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Bulletin Board</title>
+    
+</head>
+<body>
+    <div class="project">
+    <div class="container">
+        <h1>프로젝트 목록</h1>
+
+        <!-- 게시판에 게시물 표시 - -->
+        {% for post in posts %}
+        <div class="post">
+            <h2>{{ 프로젝트 명 }}   </h2>
+            <p>{{ 프로젝트 내용 }}</p>
+        </div>
+        {% endfor %}
+        
+        <!-- 프로젝트 작성 -->
+        <div class="create-button">
+            <a href="produce.html" style="text-decoration: none; background-color: #007bff; color: #fff; padding: 10px 20px; border-radius: 5px;">프로젝트 생성</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

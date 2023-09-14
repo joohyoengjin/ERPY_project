@@ -1,0 +1,37 @@
+<!-- 프로젝트 생성 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Create Project</title>
+</head>
+<body>
+    <div class="produce">
+    <h2>프로젝트 생성</h2>
+    <form method="POST" action="/create_project">
+        <label for="project_name">명 칭:</label>
+        <input type="text" id="project_name" name="project_name" required><br><br>
+
+        <label for="project_code">코 드:</label>
+        <input type="text" id="project_code" name="project_code" required><br><br>
+
+        <label for="project_date">기 간:</label>
+        <input type="date" id="project_date" name="project_date" required><br><br>
+
+        <label for="item">항 목:</label>
+        <select id="item" name="item">
+            <option value="item1">pro 1</option>
+            <option value="item2">pro 2</option>
+            <option value="item3">pro 3</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+        
+
+        <input type="submit" value="생 성">
+
+
+    </form>
+
+    </div>
+</body>
+</html>
